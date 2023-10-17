@@ -1,3 +1,5 @@
+@import "scss/variables";
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -36,7 +38,38 @@
 .card {
   padding: 2em;
 }
+.card button {
+  margin-right: 1rem;
+}
 
 .read-the-docs {
   color: #888;
+}
+
+.form input {
+  outline: none;
+  display: block;
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+}
+
+.form button {
+  cursor: pointer;
+  width: 100%;
+  border: 0;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+
+.form-h2 {
+  font-size: $global-h2-font-size;
+}
+.login-button {
+  background-color: $global-teal-button;
+  border-radius: $global-border-radius;
+}
+.register-button {
+  background-color: $global-black-button;
 }
